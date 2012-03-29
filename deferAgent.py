@@ -156,6 +156,30 @@ if __name__ == "__main__":
                     "Checking for deferred mails of user %s" % (current_user)
                 )
 
+                # Check, if folder and tag exist
+
+                if mailbox.getTagById(defer_tag_id) == None:
+                    logging.warn(
+                        "Tag with ID %s doesn't exist for user %s" %
+                        (
+                            defer_tag_id,
+                            current_user
+                        )
+                    )
+
+                    continue
+
+                if mailbox.getFolderById(defer_folder_id) == None:
+                    logging.warn(
+                        "Folder with ID %s doesn't exist for user %s" %
+                        (
+                            defer_folder_id,
+                            current_user
+                        )
+                    )
+
+                    continue
+
                 # This user is using the defer-zimlet
 
                 searchparams = ZSearchParams(
