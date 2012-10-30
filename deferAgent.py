@@ -7,9 +7,9 @@ at https://github.com/ZedachIT/eu_zedach_emaildefer
 
 # Imports
 
-from com.zimbra.cs.zclient import ZMailbox
-from com.zimbra.cs.account.Provisioning import AccountBy
-from com.zimbra.cs.zclient import ZSearchParams
+from com.zimbra.client import ZMailbox
+from com.zimbra.common.account.Key import AccountBy
+from com.zimbra.client import ZSearchParams
 
 from com.zimbra.cs.account.soap import SoapProvisioning
 
