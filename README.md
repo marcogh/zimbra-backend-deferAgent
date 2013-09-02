@@ -6,8 +6,8 @@ deferAgent
 About
 *****
 
-Backend-Script for the "Defer E-Mail"-Zimlet available on github. 
-`https://github.com/ZedachIT/eu_zedach_emaildefer <https://github.com/ZedachIT/eu_zedach_emaildefer>`_
+Backend-Script for the "Defer E-Mail"-Zimlet available on
+[github](https://github.com/dploeger/zimbra-zimlet-emaildefer).
 
 This script uses the Zimbra bundled Jython framework to run through all 
 domains to find users, that are using the "Defer E-Mail"-Zimlet and check if 

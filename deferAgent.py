@@ -1,8 +1,8 @@
 '''
 Backend script for the "E-Mail defer"-Zimlet available
-at https://github.com/ZedachIT/eu_zedach_emaildefer
+at https://github.com/dploeger/zimbra-zimlet-emaildefer
 
-@author: Dennis Ploeger <dennis.ploeger@zedach.eu>
+@author: Dennis Ploeger <develop@dieploegers.de>
 '''
 
 # Imports
@@ -143,10 +143,10 @@ if __name__ == "__main__":
             for key in accountinfo.getZimletProps()[
                 "zimbraZimletUserProperties"
             ]:
-                if ("eu_zedach_emaildefer" in key) and\
+                if ("de_dieploegers_emaildefer" in key) and\
                    ("deferFolderId" in key):
                     defer_folder_id = key.split(":")[2]
-                elif ("eu_zedach_emaildefer" in key) and\
+                elif ("de_dieploegers_emaildefer" in key) and\
                    ("deferTagId" in key):
                     defer_tag_id = key.split(":")[2]
 
